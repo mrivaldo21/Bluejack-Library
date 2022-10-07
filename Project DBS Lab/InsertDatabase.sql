@@ -1,0 +1,147 @@
+USE BluejackLibrary
+
+INSERT INTO [Staff] VALUES 
+('SF001','Alfariz','Male','Benyamin Sueb street No.012','+62823463278',3200000),
+('SF002','Aurora','Female','Griya Tawang street Blok D ','+628983374589',6700000),
+('SF003','Zidny','Female','Laskar Merdeka street 1D','+6298324571231',5400000),
+('SF004','Riri','Male','Capital City street Blok A No.01','+621285347123',1000000),
+('SF005','Asegaf','Male','Sudirman Park street No.301','+624567139239',100000),
+('SF006','Nata','Male','joyoboyo street No.53','+621275327791',2100000),
+('SF007','Debora','Female','Gajah Mada street No.13','+6246125382351',3000000),
+('SF008','Christin','Female','Rungkut Menaggal street Blok B No.39','+6298347632923',1400000),
+('SF009','Lethia','Female','Menur Pumpungan No.74','+6212457325952',3700000),
+('SF010','Tabbby','Male','Gubeng street No.21','+6245537154923',2500000);
+
+INSERT INTO [Student] VALUES 
+('ST001', 'Mine', 'Female', 'Sunter Jaya 12', 'minemine2@gmail.com'),
+('ST002', 'Kikit', 'Female', 'Harapan Indah Street', 'kikitjangkrik@yahoo.com'),
+('ST003', 'Naruto Uzumaki', 'Male', 'Ahmad Yani Street', 'sayaadadua@blibli.com'),
+('ST004', 'Drake', 'Male', 'Jagir Wonokromo 01', 'iamdrake@hello.com'),
+('ST005', 'Ningki Minjaj', 'Female', 'Mayjen HR. Mohammad', 'letsgotothebi@yahoo.com'),
+('ST006', 'Doni Jati', 'Male', 'Wonorejo Rungkut Street', 'donianakbaik@hecei.com'),
+('ST007', 'Jared Naintin', 'Male', 'Gunung Anyar Tengah 9B', 'capekbanget@yahoo.com'),
+('ST008', 'Mutiara Theo', 'Female', 'Medokan Keputih 05', 'mutibleh@sukma.com'),
+('ST009', 'Miraclyta Evangeline Dorothy', 'Female', 'Deles Street', 'clyta@yahoo.com'),
+('ST010', 'Zahrani Mutia', 'Female', 'Kejawan Putih Tambak 36', 'zryan78@gmail.com');
+
+INSERT INTO [BookCategory] VALUES
+('BC001','Fantasy'),
+('BC002','Mystery'),
+('BC003','Education'),
+('BC004','Romance'),
+('BC005','Sci-fi');
+
+INSERT INTO [Book] VALUES 
+('BK001','BC001','Naruto','2012-12-12',32,8.5),
+('BK002','BC004','Your Lie in April','2015-04-20',38,8.5),
+('BK003','BC003','Laskar Pelangi','2013-11-11',18,8.5),
+('BK004','BC001','Attack on Titan','2014-05-12',9,3.0),
+('BK005','BC002','Jujutsu Kaisen','2020-08-25',10,7.5),
+('BK006','BC005','Interstellar','2016-05-27',35,7.0),
+('BK007','BC004','The Quintessential Quintuplets','2018-02-09',12,8.5),
+('BK008','BC001','My Hero Academia','2012-07-07',15,9.0),
+('BK009','BC004','Clannad','2012-02-02',9,3.5),
+('BK010','BC001','Takt Op','2021-03-05',5,7.2);
+
+INSERT INTO [Donator] VALUES
+('DR001', 'Baron Good', 'Male', '713 Mawar Street', '+6281315576498'),
+('DR002', 'Tara Swift', 'Female', '12 Nusa Indah', '+6281157654433'),
+('DR003', 'Bolly Smile', 'Male', '11 Fourth Avenue', '+6281209870966'),
+('DR004', 'Shanika Wijaya', 'Female', '87 Mangga Street', '+6282933654780'), 
+('DR005', 'Clara Sharon', 'Female', 'Royal Plaza Block D', '+6285543342200'),
+('DR006', 'Louis', 'Male', '100 Fifth Avenue', '+6281275576432'),
+('DR007', 'Daniel Evans', 'Male', '15 Melati Indah', '+6285190003211'),
+('DR008', 'Budi Suwoto', 'Male', '24 Kartini Street', '+6289930445678'),
+('DR009', 'Alexander Nathan', 'Male', '87 Melon Street', '+6285987786432'),
+('DR010', 'Silvia Aprilia', 'Female', '21 Gambir Street', '+6281315543229');
+
+INSERT INTO [BorrowTransaction] VALUES
+('BT001', 'ST002', 'SF003', '2018-07-06', 2),
+('BT002', 'ST004', 'SF004', '2018-08-05', 2),
+('BT003', 'ST001', 'SF009', '2019-04-04', 3),
+('BT004', 'ST005', 'SF002', '2019-09-03', 3),
+('BT005', 'ST006', 'SF003', '2019-10-02', 2),
+('BT006', 'ST007', 'SF001', '2020-01-05', 2),
+('BT007', 'ST002', 'SF005', '2020-02-04', 3),
+('BT008', 'ST003', 'SF003', '2020-03-03', 2),
+('BT009', 'ST005', 'SF001', '2020-05-04', 2),
+('BT010', 'ST009', 'SF010', '2020-07-05', 2), 
+('BT011', 'ST008', 'SF002', '2021-01-13', 1),
+('BT012', 'ST005', 'SF004', '2021-02-27', 1),
+('BT013', 'ST003', 'SF005', '2021-03-05', 1),
+('BT014', 'ST007', 'SF003', '2021-04-10', 1),
+('BT015', 'ST010', 'SF007', '2021-05-21', 1); 
+
+INSERT INTO [BorrowTransactionDetail] VALUES
+('BT001', 'BK001', '2018-07-10'),
+('BT001', 'BK002', '2018-07-12'),
+('BT002', 'BK001', '2018-08-09'),
+('BT002', 'BK003', '2018-08-12'),
+('BT003', 'BK004', '2019-04-07'),
+('BT003', 'BK006', '2019-04-07'),
+('BT003', 'BK007', '2019-04-11'),
+('BT004', 'BK003', '2019-09-10'),
+('BT004', 'BK004', '2019-09-06'),
+('BT004', 'BK009', '2019-09-06'),
+('BT005', 'BK006', '2019-10-06'),
+('BT005', 'BK007', '2019-10-06'),
+('BT006', 'BK007', '2020-01-10'),
+('BT006', 'BK008', '2020-01-10'),
+('BT007', 'BK008', '2020-02-07'),
+('BT007', 'BK009', '2020-02-07'),
+('BT007', 'BK006', '2020-02-08'),
+('BT008', 'BK002', '2020-03-09'),
+('BT008', 'BK003', '2020-03-10'),
+('BT009', 'BK001', '2020-05-09'),
+('BT009', 'BK009', '2020-05-10'),
+('BT010', 'BK004', '2020-07-10'),
+('BT010', 'BK009', '2020-07-10'),
+('BT011', 'BK004', '2021-01-29'),
+('BT012', 'BK002', '2021-02-09'),
+('BT013', 'BK002', '2021-03-19'),
+('BT014', 'BK005', '2021-04-21'),
+('BT015', 'BK010', '2021-05-01');
+
+INSERT INTO [DonationTransaction] VALUES
+('DT001', 'SF009', 'DR003', '2015-05-01'),
+('DT002', 'SF001', 'DR008', '2016-08-16'),
+('DT003', 'SF005', 'DR006', '2016-10-20'),
+('DT004', 'SF003', 'DR005', '2017-03-09'),
+('DT005', 'SF002', 'DR004', '2017-09-21'),
+('DT006', 'SF010', 'DR006', '2018-11-16'),
+('DT007', 'SF008', 'DR004', '2018-12-30'),
+('DT008', 'SF007', 'DR002', '2019-04-14'),
+('DT009', 'SF008', 'DR008', '2019-10-29'),
+('DT010', 'SF006', 'DR010', '2020-05-20'),
+('DT011', 'SF003', 'DR009', '2021-01-05'),
+('DT012', 'SF009', 'DR003', '2021-02-21'),
+('DT013', 'SF007', 'DR001', '2021-03-13'),
+('DT014', 'SF010', 'DR004', '2021-04-07'),
+('DT015', 'SF001', 'DR007', '2021-05-22');
+
+INSERT INTO [DonationTransactionDetail] VALUES
+('DT001', 'BK001', 15),
+('DT001', 'BK003', 11),
+('DT002', 'BK001', 101),
+('DT002', 'BK009', 50),
+('DT002', 'BK003', 12),
+('DT003', 'BK004', 200),
+('DT004', 'BK008', 150),
+('DT004', 'BK004', 21),
+('DT005', 'BK001', 38),
+('DT005', 'BK006', 27),
+('DT006', 'BK007', 409),
+('DT007', 'BK008', 72),
+('DT007', 'BK004', 48),
+('DT008', 'BK003', 350),
+('DT008', 'BK002', 275),
+('DT009', 'BK007', 64),
+('DT010', 'BK008', 246),
+('DT010', 'BK006', 201),
+('DT011', 'BK003', 131),
+('DT011', 'BK007', 31),
+('DT012', 'BK010', 301),
+('DT013', 'BK009', 210),
+('DT014', 'BK001', 90),
+('DT015', 'BK004', 71),
+('DT015', 'BK005', 371);
